@@ -5,8 +5,6 @@ function Header({ title }) {
 }
 
 function HomePage() {
-  React.useState();
-
   const [likes, setLikes] = React.useState(0);
   const names = ["Ada Lovelace", "Grace Hopper", "Margaret Hamilton"];
 
