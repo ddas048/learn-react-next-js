@@ -1,7 +1,7 @@
 const app = document.getElementById("app");
 
-function Header() {
-  return <h1>🔥 Develop. Preview. Ship. 🚀</h1>;
+function Header({ title }) {
+  return <h1>{title ? title : "Default title"}</h1>;
 }
 
 function HomePage() {
@@ -9,9 +9,9 @@ function HomePage() {
     <div>
       {/* Nesting the Header component */}
       <Header />
+      <Header title="🔥 Develop. Preview. Ship. 🚀" />
     </div>
   );
 }
 
-// ReactDOM.render(<Header />, app);
 ReactDOM.render(<HomePage />, app);
